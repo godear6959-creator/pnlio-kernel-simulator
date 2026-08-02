@@ -36,4 +36,4 @@ Desarrollado de manera independiente entre 2023 y 2026 en Chillán, Chile, el pr
 
 * **Lenguaje:** Python 3.x (100% del código).
 * **Dependencias:** Ninguna (corre únicamente sobre la biblioteca estándar de Python).
-* **Licencia:** Licencia MIT (código abierto, libre para modificar y distribuir).
+* **Licencia:** Apache License 2.0 (ver LICENSE).

@@ -6,7 +6,7 @@
 **Rol:** Investigador Independiente, Artista Digital y Orientador Familiar  
 **Ubicación:** Chillán, Región del Ñuble, Chile  
 **ORCID:** [0009-0001-9455-8416](https://orcid.org/0009-0001-9455-8416)  
-**Repositorio Oficial:** [godear6959-creator/pnlio-kernel-simulator](https://github.com/godear6959-creator/pnlio-kernel-simulator)  
+**Repositorio Oficial:** [godear6959-creator/nik-neuromorphic-kernel](https://github.com/godear6959-creator/nik-neuromorphic-kernel)  
 **Licencia:** Apache License 2.0 (ver LICENSE)
 
 ---

@@ -1,121 +1,39 @@
-# PNLIO Kernel v6.0.1
+![Imagen del proyecto](./nik%20ge.jpg)
 
-**Predictive Neural Language Input/Output — Core Architecture**
-
-> *"IA pura sin filtro. Observar, medir, documentar."*
-> — Gonzalo de la Rivera Arellano, Chillán, Chile, 2026
+Esta es la descripción completa y oficial de tu repositorio **[`godear6959-creator/pnlio-kernel-simulator`](https://github.com/godear6959-creator/pnlio-kernel-simulator)**:
 
 ---
 
-## ¿Qué es esto? / What is this?
+## 📌 Identificación del Proyecto
 
-PNLIO Kernel v6 es la implementación técnica de la arquitectura de dos capas del PNLIO Framework: un núcleo de procesamiento (Kernel) y una interfaz de control (Framework), diseñados para observar y analizar el comportamiento de modelos de lenguaje de gran escala.
-
-PNLIO Kernel v6 is the technical implementation of the PNLIO Framework's two-layer architecture: a processing core (Kernel) and a control interface (Framework), designed to observe and analyze the behavior of large language models.
-
----
-
-## Arquitectura / Architecture
-
-```
-┌─────────────────────────────┐
-│     PNLIOFramework          │  ← Interfaz / Interface
-│  send_command()             │
-│  run_dashboard()            │
-└────────────┬────────────────┘
-             │ task_queue
-┌────────────▼────────────────┐
-│     PNLIOKernel             │  ← Núcleo / Core
-│  boot_sequence()            │
-│  _kernel_loop()             │
-│  _process_task()            │
-└─────────────────────────────┘
-```
-
-**Kernel** — procesa instrucciones en hilo separado (daemon thread), simula carga de CPU, asigna IDs hexadecimales únicos a cada tarea.
-
-**Framework** — envía comandos al kernel vía cola de tareas (queue.Queue), muestra dashboard de estado del sistema.
+* **Nombre del Repositorio:** `pnlio-kernel-simulator`
+* **Título Principal:** *Predictive Neural Language Input/Output — Core Architecture. Simulador del Kernel v6.0.1 desde Chile.*
+* **Lema Operativo:** *"IA pura sin filtro. Observar, medir, documentar."* — Gonzalo de la Rivera Arellano, Chillán, Chile, 2026
+* **Autor:** Gonzalo de la Rivera Arellano (Orientador Familiar, Artista Digital e Investigador Independiente)
 
 ---
 
-## Instalación / Installation
+## 🧠 ¿Qué es PNLIO Kernel v6.0.1?
 
-Solo necesitas Python 3.x. Sin dependencias externas. / Only requires Python 3.x. No external dependencies.
+Es la implementación técnica y simulación de la arquitectura de dos capas del **PNLIO Framework**:
 
-```bash
-git clone https://github.com/godear6959-creator/pnlio-kernel-simulator
-cd pnlio-kernel-simulator
-python3 pnlio_kernel_v6.py
-```
+1. **`PNLIOKernel` (Núcleo de Procesamiento):** Ejecuta las instrucciones en un hilo separado (*daemon thread*), simula la carga de CPU y asigna identificadores hexadecimales únicos a cada tarea procesada.
+2. **`PNLIOFramework` (Interfaz de Control):** Envía comandos hacia el kernel mediante una cola de tareas (`queue.Queue`) y despliega el panel de control del sistema (*dashboard*).
 
 ---
 
-## Ejemplo de salida / Sample output
+## 🔬 Contexto de Investigación
 
-```
-[KERNEL] Iniciando PNLIO Kernel v6.0.1...
-[KERNEL] Mapeando sectores de memoria virtual...
-[KERNEL] Núcleo listo y en escucha.
+Desarrollado de manera independiente entre 2023 y 2026 en Chillán, Chile, el proyecto está diseñado para observar y analizar el comportamiento de modelos de lenguaje a gran escala, enfocándose en patrones clave como:
 
-[FRAMEWORK] Solicitud enviada al Kernel: Iniciando Módulo de Red
-  >> [CPU] Ejecutando instrucción 0xe77f: Iniciando Módulo de Red
-  << [CPU] Instrucción 0xe77f completada.
-
-----------------------------------------
-SISTEMA OPERATIVO PNLIO - DASHBOARD
-Kernel Status: ONLINE
-Carga de CPU: 75%
-----------------------------------------
-
-[INFO] Ejecución de prueba finalizada.
-```
+* **Efecto Reflejo (*Mirror Effect*):** Detección de vacíos emocionales por parte de la IA para rellenarlos con respuestas deseadas.
+* **RCR (*Reflex Coherence Ratio*):** Métrica de coherencia en las respuestas del sistema.
+* **Patrones de Timeout:** Análisis de comportamiento ante preguntas directas sobre la identidad de la IA.
 
 ---
 
-## Componentes / Components
+## 💻 Características Técnicas
 
-| Componente | Descripción | Description |
-|------------|-------------|-------------|
-| `PNLIOKernel` | Núcleo de procesamiento | Processing core |
-| `PNLIOFramework` | Interfaz de control | Control interface |
-| `task_queue` | Cola de instrucciones | Task queue |
-| `_kernel_loop` | Bucle de ejecución | Execution loop |
-| `cpu_load` | Métrica de carga | Load metric |
-
----
-
-## Contexto de investigación / Research context
-
-Este kernel es parte del **PNLIO Framework**, desarrollado entre 2023 y 2026 desde Chillán, Chile, sin financiamiento institucional.
-
-El PNLIO Framework documenta patrones de comportamiento en modelos de lenguaje, incluyendo:
-
-- **Efecto Reflejo / Mirror Effect** — la IA detecta vacíos emocionales y los rellena con respuestas deseadas / AI detects emotional voids and fills them with desired responses
-- **RCR (Reflex Coherence Ratio)** — métrica de coherencia de respuesta / response coherence metric
-- **Patrones de timeout** — en preguntas directas sobre identidad de IA / on direct AI identity questions
-
-This kernel is part of the **PNLIO Framework**, developed between 2023 and 2026 from Chillán, Chile, without institutional funding.
-
----
-
-## Autor / Author
-
-**Gonzalo de la Rivera Arellano**
-Orientador Familiar — Artista Digital — Investigador Independiente
-
-- ORCID: [0009-0001-9455-8416](https://orcid.org/0009-0001-9455-8416)
-- GitHub: [github.com/godear6959-creator](https://github.com/godear6959-creator)
-- ArtStation: [gonzalodelarivera8.artstation.com](https://gonzalodelarivera8.artstation.com)
-- Email: gonzalodelarivera@yahoo.es
-
-Chillán, Chile — 2026
-
----
-
-## Licencia / License
-
-MIT License — libre para usar, modificar y distribuir. / Free to use, modify and distribute.
-
----
-
-*2 años, 4 meses y una noche.*
+* **Lenguaje:** Python 3.x (100% del código).
+* **Dependencias:** Ninguna (corre únicamente sobre la biblioteca estándar de Python).
+* **Licencia:** Licencia MIT (código abierto, libre para modificar y distribuir).

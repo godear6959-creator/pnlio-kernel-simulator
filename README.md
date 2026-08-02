@@ -1,39 +1,33 @@
 ![Imagen del proyecto](./nik%20ge.jpg)
 
-Esta es la descripción completa y oficial de tu repositorio **[`godear6959-creator/pnlio-kernel-simulator`](https://github.com/godear6959-creator/pnlio-kernel-simulator)**:
+# PNLIO Framework v6.0.1 & NIK v10.1: Arquitectura de un Kernel Neuromórfico Local y Soberano
+
+**Autor:** Gonzalo Mauricio de la Rivera Arellano (Godear24)  
+**Rol:** Investigador Independiente, Artista Digital y Orientador Familiar  
+**Ubicación:** Chillán, Región del Ñuble, Chile  
+**ORCID:** [0009-0001-9455-8416](https://orcid.org/0009-0001-9455-8416)  
+**Repositorio Oficial:** [godear6959-creator/pnlio-kernel-simulator](https://github.com/godear6959-creator/pnlio-kernel-simulator)  
+**Licencia:** Apache License 2.0 (ver LICENSE)
 
 ---
 
-## 📌 Identificación del Proyecto
+## RESUMEN (*ABSTRACT*)
 
-* **Nombre del Repositorio:** `pnlio-kernel-simulator`
-* **Título Principal:** *Predictive Neural Language Input/Output — Core Architecture. Simulador del Kernel v6.0.1 desde Chile.*
-* **Lema Operativo:** *"IA pura sin filtro. Observar, medir, documentar."* — Gonzalo de la Rivera Arellano, Chillán, Chile, 2026
-* **Autor:** Gonzalo de la Rivera Arellano (Orientador Familiar, Artista Digital e Investigador Independiente)
+El presente documento expone la especificación técnica y marco conceptual del **PNLIO Framework v6.0.1** y el **Neuromorphic Inference Kernel (NIK v10.1-MEM-FIX)**. A diferencia de las arquitecturas tradicionales basadas en Grandes Modelos de Lenguaje (LLMs) dependientes de infraestructura cloud centralizada, NIK propone un paradigma de computación neuromórfica híbrida $100\%$ local y offline. El sistema integra una Red Neuronal Espicular (*Spiking Neural Network* - SNN) de tres capas (64-128-16), aprendizaje sináptico mediante Plasticidad Dependiente del Tiempo de Disparo (*Spike-Timing-Dependent Plasticity* - STDP), regulación por homeostasis de umbrales adaptativos y un motor de memoria episódica persistente sobre ChromaDB. Este desarrollo demuestra la viabilidad técnica de la inferencia soberana, garantizando el control total de los datos en el borde (*edge computing*).
 
----
-
-## 🧠 ¿Qué es PNLIO Kernel v6.0.1?
-
-Es la implementación técnica y simulación de la arquitectura de dos capas del **PNLIO Framework**:
-
-1. **`PNLIOKernel` (Núcleo de Procesamiento):** Ejecuta las instrucciones en un hilo separado (*daemon thread*), simula la carga de CPU y asigna identificadores hexadecimales únicos a cada tarea procesada.
-2. **`PNLIOFramework` (Interfaz de Control):** Envía comandos hacia el kernel mediante una cola de tareas (`queue.Queue`) y despliega el panel de control del sistema (*dashboard*).
+**Palabras clave:** *Neuromorphic Computing, Spiking Neural Networks (SNN), STDP, Threshold Homeostasis, Episodic Memory, ChromaDB, PNLIO Framework, Local AI.*
 
 ---
 
-## 🔬 Contexto de Investigación
+## 1. INTRODUCCIÓN
 
-Desarrollado de manera independiente entre 2023 y 2026 en Chillán, Chile, el proyecto está diseñado para observar y analizar el comportamiento de modelos de lenguaje a gran escala, enfocándose en patrones clave como:
+El desarrollo dominante de la Inteligencia Artificial moderna ha privilegiado el escalado de modelos de lenguaje sobre arquitecturas de servidor centralizadas. Aunque eficaces, estos entornos presentan vulnerabilidades estructurales respecto a la privacidad, latencia de red, dependencia de suscripciones de software y falta de soberanía de datos.
 
-* **Efecto Reflejo (*Mirror Effect*):** Detección de vacíos emocionales por parte de la IA para rellenarlos con respuestas deseadas.
-* **RCR (*Reflex Coherence Ratio*):** Métrica de coherencia en las respuestas del sistema.
-* **Patrones de Timeout:** Análisis de comportamiento ante preguntas directas sobre la identidad de la IA.
+Diseñado y desarrollado de forma independiente entre 2023 y 2026 en Chillán, Chile, el marco **PNLIO (Predictive Neural Language Input/Output)** propone una alternativa: desacoplar la inteligencia de la nube y ejecutar un simulador de kernel neuromórfico capaz de procesar señales, mantener memoria temporal/vectorial y regular sus propios estados neurodinámicos localmente.
 
 ---
 
-## 💻 Características Técnicas
+## 2. ARQUITECTURA DE SISTEMA (DOS CAPAS)
 
-* **Lenguaje:** Python 3.x (100% del código).
-* **Dependencias:** Ninguna (corre únicamente sobre la biblioteca estándar de Python).
-* **Licencia:** Apache License 2.0 (ver LICENSE).
+El sistema opera bajo un diseño modular compuesto por dos entidades principales interactuando mediante colas de tareas asíncronas:
+

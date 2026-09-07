@@ -27,6 +27,7 @@ El flujo de demostración crea el kernel, inicia su ciclo de ejecución, envía 
 ├── NIK_v10.1_MEM_FIX_Arquitectura.png
 ├── PAPER_NIK_v10.1_MEM_FIX.pdf
 ├── README.md
+├── CORRECCION_DOCUMENTAL_NIK_v10.1.md
 ├── nik ge.jpg
 ├── pnlio_kernel_v6.py
 └── watermarked_img_1459579470421024 HONGO.jpg
@@ -37,6 +38,12 @@ El flujo de demostración crea el kernel, inicia su ciclo de ejecución, envía 
 El repositorio documenta una arquitectura conceptual que menciona redes neuronales de picos, plasticidad sináptica, homeostasis y memoria episódica. Sin embargo, la implementación Python visible en `pnlio_kernel_v6.py` es actualmente un simulador de flujo de tareas con `queue.Queue`, `threading`, estados internos y carga de CPU aleatoria.
 
 Esta distinción es importante para la reproducibilidad: el paper presenta el marco de investigación, mientras que el script disponible implementa una demostración mínima del ciclo kernel–framework. Cualquier afirmación sobre SNN, STDP, memoria episódica o ejecución neuromórfica debe considerarse trabajo pendiente hasta que exista código, pruebas y resultados verificables para esas funciones.
+
+## Corrección documental
+
+Se agrega [`CORRECCION_DOCUMENTAL_NIK_v10.1.md`](CORRECCION_DOCUMENTAL_NIK_v10.1.md) como aclaración de trazabilidad. Esta nota **no borra ni reemplaza** el paper `PAPER_NIK_v10.1_MEM_FIX.pdf`, el código ni los recursos existentes; distingue la arquitectura documentada de la implementación Python pública que puede verificarse actualmente.
+
+El paper conserva su valor como especificación y registro de la línea de investigación. El script `pnlio_kernel_v6.py` se identifica como el simulador base visible del ciclo kernel–framework. Las funciones avanzadas descritas en el paper deberán vincularse a código, pruebas y resultados reproducibles a medida que se incorporen al repositorio.
 
 ## Revisión de ejecución
 
